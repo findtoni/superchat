@@ -1,0 +1,15 @@
+{
+  "short_name": "Superchat by findToni",
+  "name": "Real-time chat application built with React + Firebase",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512/512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#A83279",
+  "background_color": "#ffffff"
+}
