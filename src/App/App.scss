@@ -1,0 +1,61 @@
+.app {
+  &.light {
+    background: #D38312;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &.dark {
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 575.98px) {
+  footer {
+    bottom: 100px;
+  }
+  .superchat__new {
+    bottom: 200px;
+  }
+}
+.superchat__new {
+  position: fixed;
+  left: 0;
+  bottom: 150px!important;
+  width: 100%;
+}
+input:focus{
+  outline: none;
+}
+.timestamp {
+  display: none;
+}
+.bubble {
+  &:hover {
+    .timestamp {
+      display: inline-flex;
+    }
+  }
+}
+.message-sent {
+  justify-content: flex-end;
+  img {
+    order: 3;
+    margin-left: 10px;
+    float: right;
+    text-align: right;
+  }
+  .message {
+    order: 2;
+  }
+  .timestamp {
+    order: 1;
+    padding-right: 10px;
+  }
+}
